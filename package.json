@@ -1,26 +1,25 @@
 {
-  "name": "tree-sitter-nim",
-  "version": "0.0.1",
-  "description": "tree-sitter parser for the nim programming language",
-  "main": "grammar.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "aMOPel",
-  "license": "MIT",
-  "dependencies": {
-    "nan": "^2.15.0"
-  },
-  "devDependencies": {
-    "tree-sitter-cli": "^0.20.6"
-  },
-  "tree-sitter": [
-    {
-      "scope": "source.nim",
-      "file-types": [
-        "nim",
-        "nims"
-      ]
-    }
-  ]
+	"name": "tree-sitter-nim",
+	"version": "0.0.1",
+	"description": "tree-sitter parser for the nim programming language",
+	"main": "grammar.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "aMOPel",
+	"license": "MIT",
+	"dependencies": {
+		"nan": "^2.15.0"
+	},
+	"devDependencies": {
+		"tree-sitter-cli": "^0.20.6"
+	},
+	"tree-sitter": [
+		{
+			"scope": "source.nim",
+			"file-types": ["nim", "nims"],
+			"highlights": ["queries/highlights.scm"],
+			"injection-regex": "^(nim)$"
+		}
+	]
 }
